@@ -1,16 +1,16 @@
 import { About } from "./components/About";
 import { Cta } from "./components/Cta";
 import { FAQ } from "./components/FAQ";
-import { Features } from "./components/Features";
+import { Products } from "./components/Products";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
-import { HowItWorks } from "./components/HowItWorks";
+import { Programs } from "./components/Programs";
 import { Navbar } from "./components/Navbar";
 import { Newsletter } from "./components/Newsletter";
 import { Pricing } from "./components/Pricing";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
-import { Sponsors } from "./components/Sponsors";
+import { LandingHero} from "./components/Sponsors";
 import { Team } from "./components/Team";
 import { Testimonials } from "./components/Testimonials";
 import "./App.css";
@@ -20,18 +20,19 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Sponsors />
-      <About />
-      <HowItWorks />
-      <Features />
+      <LandingHero/>
       <Services />
+      <Programs/>
+      <Products />
       <Cta />
-      <Testimonials />
-      <Team />
-      <Pricing />
-      <Newsletter />
-      <FAQ />
-      <Footer />
+      {/* <Team /> */}
+      {/* <Sponsors /> */}
+      {/* <About /> */}
+      {/* <Testimonials /> */}
+      {/* <Pricing />
+      <Newsletter /> */}
+      {/* <FAQ />
+      <Footer /> */}
       <ScrollToTop />
     </>
   );

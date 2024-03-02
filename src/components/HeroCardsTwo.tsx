@@ -14,7 +14,7 @@ import { Check, Linkedin } from "lucide-react";
 import { LightBulbIcon } from "./Icons";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
-export const HeroCards = () => {
+export const HeroCardsTwo = () => {
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
@@ -158,7 +158,7 @@ export const HeroCards = () => {
             <LightBulbIcon />
           </div>
           <div>
-            <CardTitle>Light & dark mode</CardTitle>
+            <CardTitle>Business Consultation</CardTitle>
             <CardDescription className="text-md mt-2">
               Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
               natusm.
@@ -166,6 +166,7 @@ export const HeroCards = () => {
           </div>
         </CardHeader>
       </Card>
+      
     </div>
   );
 };
