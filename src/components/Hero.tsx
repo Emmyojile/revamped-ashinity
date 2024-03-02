@@ -21,7 +21,8 @@ export const Hero = () => {
           heights.
         </p>
 
-          <Button className="w-fit md:w-fit item-center rounded-full mx-auto px-4">Learn More</Button>
+          {/* <Button className="rounded-full flex sm:w-1/4 w-1/2   mt-3">Learn More</Button> */}
+          <Button className="w-fit md:w-fit item-center rounded-full mx-auto  hover:text-white hover:bg-green-70 bg-slate-800 text-green-70 px-10">Learn More</Button>
       </div>
 
 

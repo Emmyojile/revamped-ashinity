@@ -26,7 +26,7 @@ export const Team = () => {
   };
 
   return (
-    <section className="container grid lg:grid-cols-1 place-items-center py-20 md:py-32 gap-10 relative min-h-screen">
+    <section id="team" className="container grid lg:grid-cols-1 place-items-center py-20 md:py-32 gap-10 relative min-h-screen">
       <div className="md:hidden">
       <div className="absolute flex flex-col pt-20 gap-3 items-center inset-0">
         {teams.map((team, index) => (

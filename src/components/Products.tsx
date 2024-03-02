@@ -26,7 +26,7 @@ export const Products = () => {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
+    <section id="products" className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <div className="text-center lg:text-start space-y-6">
         <AnimatePresence mode="wait">
           <motion.div
@@ -53,7 +53,7 @@ export const Products = () => {
                     </CardDescription>
                     {/* <div className="flex flex-col sm:flex-row gap-3 flex-wrap"> */}
                     <Button
-                      className="w-fit md:w-fit rounded-full mt-2 md:px-4 justify-center"
+                      className="mt-4 w-fit md:w-fit item-center rounded-full mx-auto  hover:text-white hover:bg-green-70 bg-slate-800 text-green-70 px-10"
                       onClick={() =>
                         window.open(
                           PRODUCTSTABS[currentProductIndex].link,

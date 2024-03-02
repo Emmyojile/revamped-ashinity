@@ -20,7 +20,7 @@ export const Services = () => {
       return () => clearInterval(intervalId);
     }, []);
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
+    <section id="services" className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <div className="text-center lg:text-start space-y-6">
       <AnimatePresence mode='wait'>
           <motion.div

@@ -9,7 +9,7 @@ import {
 import { useEffect, useState } from "react";
 import { EVENTTABS, PRODUCTSTABS } from "@/constants";
 
-export const Cta = () => {
+export const Events = () => {
       // Define an array of background images
       const backgroundImages = [
         '/eventOne.png',
@@ -45,7 +45,7 @@ export const Cta = () => {
   }, []);
   return (
     <section
-      id="cta"
+      id="events"
       className=" py-16 my-24 sm:my-32 min-h-screen"
       style={{ backgroundImage: `url(${backgroundImages[currentBackgroundIndex]})`, backgroundSize: 'cover' }}
     >
@@ -76,12 +76,12 @@ export const Cta = () => {
                     </CardDescription>
                     <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
                     <Button
-                      className="w-fit md:w-fit rounded-full mt-2 md:px-4 justify-center"
+                      className="w-fit md:w-fit rounded-full mt-2 md:px-4 justify-center item-center  hover:text-white hover:bg-green-70 bg-slate-800 text-green-70 px-10"
                     >
                       View Finalist
                     </Button>
                     <Button
-                      className="w-fit md:w-fit rounded-full mt-2 md:px-4 justify-center"
+                      className="w-fit md:w-fit rounded-full mt-2 md:px-4 justify-center item-center  hover:text-white hover:bg-green-70 bg-slate-800 text-green-70 px-10"
                     >
                       Join Community
                     </Button>
