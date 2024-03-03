@@ -8,10 +8,12 @@ import { Services } from "./components/Services";
 import { LandingHero} from "./components/LandingHero";
 import { Team } from "./components/Team";
 import "./App.css";
+import {Topbar} from "./components/TopBar";
 
 function App() {
   return (
     <>
+      <Topbar/>
       <Hero />
       <LandingHero/>
       <Services />

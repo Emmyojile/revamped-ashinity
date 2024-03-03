@@ -49,7 +49,7 @@ const routeList: RouteProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky border-t-[2px] bottom-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
+    <header className="sticky border-t-[1px] bottom-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background ">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
@@ -97,7 +97,7 @@ export const Navbar = () => {
           </span>
 
           {/* desktop */}
-          <nav className="hidden md:flex gap-2 r-0">
+          <nav className="hidden md:flex md:mr-0 gap-2 r-0 ">
             {routeList.map((route: RouteProps, i) => (
               <a
                 href={route.href}
@@ -111,7 +111,7 @@ export const Navbar = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex gap-2">
+          {/* <div className="hidden md:flex gap-2">
             {/* <a
               href="https://github.com/leoMirandaa/shadcn-landing-page.git"
               target="_blank"
@@ -122,9 +122,47 @@ export const Navbar = () => {
             </a> */}
 
             {/* <ModeToggle /> */}
-          </div>
+          {/* </div> */} 
         </NavigationMenuList>
       </NavigationMenu>
     </header>
   );
 };
+
+
+
+
+// import useMediaQuery from "@/hooks/useMediaQuery";
+// import { useState } from "react";
+// import { Button } from "./ui/button";
+
+
+// const Topbar = ({ isTopOfPage, selectedPage, setSelectedPage }:any) => {
+//   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
+//   const navbarBackground = isTopOfPage ? "" : "bg-deep-blue";
+
+//   return (
+//     <nav
+//       className={`${navbarBackground} z-0 w-full fixed top-0 py-4 bg-opaque-black border-t border-slate-900`}
+//     >
+//       <div className="flex items-center justify-between mx-auto w-5/6 bg-bl">
+//         <div className="w-28"></div>
+//         {/* <img alt="logo" src="../public/logo.png" className="w-28" /> */}
+//         {/* DESKTOP NAV */}
+//         {isAboveSmallScreens ? (
+//         //   <div className="flex gap-16 font-opensans text-sm font-semibold">
+//             <Button className="rounded-full bg-slate-800 text-green-70 p-6 flex hover:text-white hover:bg-green-70">
+//               Book Now
+//             </Button>
+//         //   </div>
+//         ) : (
+//           <Button className="rounded-full bg-slate-800 text-green-70 p-6 flex hover:text-white hover:bg-green-70">
+//             Book Now
+//           </Button>
+//         )}
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Topbar;

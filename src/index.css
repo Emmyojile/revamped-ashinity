@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +26,20 @@ ul, ol {
 
 ol {
   list-style-type: disc; /* For ordered lists */
+}
+
+@layer utilities {
+.max-container {
+  @apply mx-auto max-w-[1440px];
+}
+
+.padding-container {
+  @apply px-6 lg:px-20 ;
+}
+
+.flexBetween {
+  @apply flex items-center justify-between;
+}
 }
 
 @keyframes shadow-slide {
