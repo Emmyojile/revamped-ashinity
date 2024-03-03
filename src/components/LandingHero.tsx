@@ -20,7 +20,7 @@ export const LandingHero = () => {
       <div className="text-center lg:text-start space-y-6">
         <img alt="logo" src="/logo.png" className="w-60" />
         <main className="text-3xl md:text-4xl font-bold">
-          <h2 className="inline">
+          <h2 className="text-start">
             Core Values
           </h2>
         </main>
